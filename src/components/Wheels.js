@@ -1,9 +1,10 @@
 import React from 'react';
 import {Container} from "@mui/material";
 import ImageTextComponent from "./ImageTextComponent";
-import backWheel from "../assets/backWheel.png";
-import frontWheel from "../assets/frontWheel.png";
+import image2 from "../assets/reifen.png";
+import image3 from "../assets/backlight2.png";
 import Section from "./Section";
+import image1 from "../assets/sattel.png";
 function Wheels() {
   const containerStyles = {
     display: 'flex',
@@ -16,24 +17,38 @@ function Wheels() {
       background :"pink"
   };
   return (
-      <Section backgroundColor={"linear-gradient(to bottom, #000, #222)"}>
-      <Container sx={{
-          padding: '0',
-      }} >
-        <h1>Wheels</h1>
+      <Section backgroundColor={"black"}>
+          <Container sx={{
+
+              padding: '0',
+              margin: '5rem',
+          }} >
+
+
+          <ImageTextComponent
+              maxWidth="400"
+              image={image2}
+              title={"Fest im Griff"}
+              text="Standardmäßig ausgestattet mit den Refen von Maxwheels, ist jedes Straßenverhältnis meisterbar."
+              align="left"
+              color={"white"}
+          />
         <ImageTextComponent
             maxWidth="400"
-            title={"Title"}
-            image={frontWheel}
-            text="Text 1"
-            align="left"
-        />
-        <ImageTextComponent
-            maxWidth="400"
-            image={backWheel}
-            text="Text 2"
+            image={image1}
+            title={"Aufgesattelt"}
+            text="Gefertigt aus hochwertigen Materialien, bietet der Sattel eine  beeindruckende Belastbarkeit von bis zu 40 Tonnen."
             align="right"
+            color={"white"}
         />
+          <ImageTextComponent
+          maxWidth="400"
+          image={image3}
+          title={"Moderne Lichttechnik"}
+          text="Die markanten OLED-Rückleuchten verleihen eine perfekte Sichtbarkeit und einen Wiedererkennungswert bei Nacht."
+          align="left"
+          color={"white"}
+      />
       </Container>
         </Section>
   );

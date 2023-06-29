@@ -5,10 +5,22 @@ import { Button } from '@mui/material';
 export const theme = createTheme({
     typography: {
         text: {
-            fontSize:' 1.2rem',
+            fontSize:' .9rem',
+            '@media (min-width:800px)': {
+                fontSize: '1.1rem',
+            },
             fontWeight: '500',
 
         },
+        h5: {
+            fontSize: '1.5rem',
+            fontWeight: '600',
+        },
+        h6: {
+            fontSize: '1.2rem',
+            fontWeight: '500',
+        }
+
     },
     palette: {
         primary: {

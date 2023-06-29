@@ -1,20 +1,20 @@
 import React from 'react';
 import { Box, Typography } from '@mui/material';
 
-const TextBox = ({ title, text, color }) => {
+const TextBox = ({ title, text, color, padding }) => {
 
     const boxStyles = {
-        padding: '20px',
+        padding: padding,
         color: color,
         textAlign: 'left',
     };
 
     return (
         <Box style={boxStyles}>
-            <Typography variant="h4" component="h4" gutterBottom>
+            <Typography variant="h6" component="h6" gutterBottom>
                 {title}
             </Typography>
-            <Typography variant="text"    >
+            <Typography variant="text"  component={"body2"}  >
                 {text}
             </Typography>
         </Box>

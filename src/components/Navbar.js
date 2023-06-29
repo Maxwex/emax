@@ -12,59 +12,89 @@ import {
     Box, useTheme, useMediaQuery
 } from '@mui/material';
 import Logo from '../assets/MW.png';
-import { useState } from 'react';
+import {useState} from 'react';
 
 import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
 
 const Navbar = () => {
-        const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
-        const toggleSidebar = () => {
-            setIsSidebarOpen(!isSidebarOpen);
-        };
+    const toggleSidebar = () => {
+        setIsSidebarOpen(!isSidebarOpen);
+    };
 
 
-
-        return (
-            <AppBar position="fixed" style={{ backgroundColor: 'rgba(0,0,0,0.5)', boxShadow: '2px',
-                    backdropFilter: 'blur(10px)', webKitBackdropFilter: 'blur(10px)',
+    return (
+        <AppBar position="fixed" style={{
+            backgroundColor: 'rgba(0,0,0,0.5)', boxShadow: '2px',
+            backdropFilter: 'blur(10px)', webKitBackdropFilter: 'blur(10px)', display: 'flex',
+            height: '50px',
+        }}
+        >
+            <Toolbar style={{
+                zIndex: 1000,
+                minHeight: '50px',
+                margin: ' 0 ',
 
             }}>
-                <Toolbar >
-                    {!isMobile && (<Toolbar sx={{ flexGrow: 1,
+                {!isMobile && (<Toolbar sx={{
+                    flexGrow: 1,
                     padding: 0,
-                    height:'40px'}}>
-                    <img src={Logo} alt="Logo" style={{ marginRight: '10px', height: '46px' }} />
-                    <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                }}
+                style={{
+
+                    minHeight: '50px',
+                    marginTop: ' 0 ',
+
+                }}>
+
+                    <img src={Logo} alt="Logo" style={{marginRight: '10px', height: '36px'}}/>
+                    <Typography variant="h5" component="div" ml={1} sx={{flexGrow: 1}}>
                         Maxwex
                     </Typography>
                     <Button color="inherit">Home</Button>
                     <Button color="inherit">Über uns</Button>
                     <Button color="inherit">Leistungen</Button>
                     <Button color="inherit">Kontakt</Button>
-                    </Toolbar>)}
-                    <IconButton color="inherit" edge="end" onClick={toggleSidebar} sx={{ display: { sm: 'none' } }}>
-                        <MenuIcon />
-                    </IconButton>
-                </Toolbar>
-                <Drawer anchor="right" open={isSidebarOpen} onClose={toggleSidebar}>
-                    <List sx={{ width: 250 }} onClick={toggleSidebar}>
-                        <ListItem button>
-                            <ListItemText primary="Home" />
-                        </ListItem>
-                        <ListItem button>
-                            <ListItemText primary="Über uns" />
-                        </ListItem>
-                        <ListItem button>
-                            <ListItemText primary="Leistungen" />
-                        </ListItem>
-                        <ListItem button>
-                            <ListItemText primary="Kontakt" />
-                        </ListItem>
-                    </List>
-                </Drawer>
-            </AppBar>
-        );
-    };
+                </Toolbar>)}
+
+            </Toolbar><IconButton color="inherit" edge="end" onClick={toggleSidebar} style={{
+            position: 'absolute',
+            right: isSidebarOpen ? '45px' : '30px',
+            top: '10px',
+            zIndex: 1100,
+            display: isMobile ? 'block' : 'none'
+        }}>
+            {isSidebarOpen ? <CloseIcon/> : <MenuIcon/>}
+
+        </IconButton>
+            <Drawer sx={{
+                zIndex: 100
+
+            }} anchor="right" open={isSidebarOpen} onClose={toggleSidebar}>
+                <List sx={{
+                    width: 250,
+                    paddingTop: '50px',
+
+                }} onClick={toggleSidebar}>
+                    <ListItem button>
+                        <ListItemText primary="Home"/>
+                    </ListItem>
+                    <ListItem button>
+                        <ListItemText primary="Über uns"/>
+                    </ListItem>
+                    <ListItem button>
+                        <ListItemText primary="Leistungen"/>
+                    </ListItem>
+                    <ListItem button>
+                        <ListItemText primary="Kontakt"/>
+                    </ListItem>
+                </List>
+            </Drawer>
+        </AppBar>
+
+    );
+};
 export default Navbar;

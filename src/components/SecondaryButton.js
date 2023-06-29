@@ -12,10 +12,11 @@ const SecondaryButton = ({ children }) => {
 
             sx={{
                 textTransform: 'none',
-                m: '10px',
+
                 height     : '50px',
                 fontWeight: 'bold',
-                fontFamily: 'Roboto, sans-serif',                   backgroundColor: 'transparent',
+                fontFamily: 'Roboto, sans-serif',
+                backgroundColor: 'transparent',
                    color: '#fff',
                    border: '2px solid #fff',
                    width: '250px',

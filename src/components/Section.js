@@ -2,18 +2,19 @@ import React from 'react';
 import { Box } from '@mui/material';
 import { useMediaQuery } from '@mui/material';
 
-const Section = ({ backgroundColor, children }) => {
+const Section = ({ backgroundColor, children, padding }) => {
     const isMobile = useMediaQuery('(max-width: 600px)');
 
     const sectionStyles = {
         background: backgroundColor,
 
-        padding: isMobile ? '0' : '2rem',
-        paddingTop: '2rem',
+
+        paddingTop: '5rem',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
         textAlign: 'center',
+        padding: isMobile ? '0' :  padding? padding :'2rem',
     };
 
     return <Box style={sectionStyles}>{children}</Box>;
