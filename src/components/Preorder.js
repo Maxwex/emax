@@ -108,7 +108,7 @@ const PreorderForm = () => {
                 </AnimateBox>
             </Box>
 
-            <Typography  variant="body2" color="primary" textAlign="center" mb={0} mt={4} maxWidth={'500px'}>
+            <Typography  variant="body2" color="primary" textAlign="center" mb={2} mt={'auto'}  maxWidth={'500px'}>
                 Bitte beachten Sie, dass die Vorbestellung unverbindlich ist und keine rechtlichen Verpflichtungen zur Kaufverpflichtung beinhaltet. Die tatsächliche Bestellung und der Kaufvertrag erfolgen zu einem späteren Zeitpunkt.            </Typography>
         </Section>
     );

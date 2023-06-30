@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import {theme} from "./theme";
 import {ThemeProvider} from "@mui/material/styles";
 import Battery from "./components/Battery";
+import Footer from "./components/Footer";
 
 function App() {
     return (
@@ -22,6 +23,7 @@ function App() {
                 <Force/>
                 <Technical/>
                 <Preorder/>
+                <Footer/>
 
             </ThemeProvider>
         </>
