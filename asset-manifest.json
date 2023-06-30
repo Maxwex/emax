@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/emax/static/css/main.dda2f8ba.css",
+    "main.js": "/emax/static/js/main.9b8a6169.js",
+    "static/js/787.620ba97e.chunk.js": "/emax/static/js/787.620ba97e.chunk.js",
+    "static/media/side4k.png": "/emax/static/media/side4k.751db1c8ae149515a967.png",
+    "static/media/steps2.png": "/emax/static/media/steps2.a5607f6ae23ac6ade634.png",
+    "static/media/steps.png": "/emax/static/media/steps.5f3f8b2baf55ae92f3a6.png",
+    "static/media/frontPanel.png": "/emax/static/media/frontPanel.290c1776c642acdd324d.png",
+    "static/media/lkwMain2.png": "/emax/static/media/lkwMain2.09d0ad19e470f17dc902.png",
+    "static/media/reifen.png": "/emax/static/media/reifen.7e2e56df08090767ccc5.png",
+    "static/media/battery3.png": "/emax/static/media/battery3.c1f2cb59edce90bb8d88.png",
+    "static/media/mittor2.png": "/emax/static/media/mittor2.5889d7cdc6ae4e1eb7d3.png",
+    "static/media/sattel.png": "/emax/static/media/sattel.43ff340ffb4e0f8c2634.png",
+    "static/media/sidePanel.png": "/emax/static/media/sidePanel.5f6a943d3d96f1352bf1.png",
+    "static/media/front.png": "/emax/static/media/front.7d53fbd5a3d7a436efef.png",
+    "static/media/roboto-all-400-normal.woff": "/emax/static/media/roboto-all-400-normal.b5a0a0df312d3423493b.woff",
+    "static/media/backlight2.png": "/emax/static/media/backlight2.d84548da3bc0b8fe2ab2.png",
+    "static/media/MW.png": "/emax/static/media/MW.8b8e8dbf7b49557efc4a.png",
+    "static/media/roboto-latin-400-normal.woff2": "/emax/static/media/roboto-latin-400-normal.176f8f5bd5f02b3abfcf.woff2",
+    "static/media/roboto-cyrillic-ext-400-normal.woff2": "/emax/static/media/roboto-cyrillic-ext-400-normal.dd55ea0a2e90d5d86e15.woff2",
+    "static/media/roboto-latin-ext-400-normal.woff2": "/emax/static/media/roboto-latin-ext-400-normal.dcc07bcfcd475f34f20b.woff2",
+    "static/media/roboto-cyrillic-400-normal.woff2": "/emax/static/media/roboto-cyrillic-400-normal.3605d18d8a4ce5bd39c3.woff2",
+    "static/media/roboto-greek-400-normal.woff2": "/emax/static/media/roboto-greek-400-normal.352cc77aaed5208ce13c.woff2",
+    "static/media/roboto-vietnamese-400-normal.woff2": "/emax/static/media/roboto-vietnamese-400-normal.52cebac009baf5592e7d.woff2",
+    "static/media/logo.svg": "/emax/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/roboto-greek-ext-400-normal.woff2": "/emax/static/media/roboto-greek-ext-400-normal.bc7ace6e50c7d9d4d959.woff2",
+    "index.html": "/emax/index.html",
+    "main.dda2f8ba.css.map": "/emax/static/css/main.dda2f8ba.css.map",
+    "main.9b8a6169.js.map": "/emax/static/js/main.9b8a6169.js.map",
+    "787.620ba97e.chunk.js.map": "/emax/static/js/787.620ba97e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dda2f8ba.css",
+    "static/js/main.9b8a6169.js"
+  ]
+}
