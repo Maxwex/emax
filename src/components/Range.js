@@ -3,6 +3,7 @@ import Section from "./Section";
 import image from "../assets/side4k.png";
 import {Box, useMediaQuery, useTheme} from "@mui/material";
 import TextBox from "./TextBox";
+import AnimateBox from "./AnimateBox";
 function Range() {
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
@@ -30,11 +31,13 @@ function Range() {
 
 
               }
-          }><TextBox title={"Transportfähigkeit"}
+          }>
+              <AnimateBox>
+              <TextBox title={"Transportfähigkeit"}
                      padding={isMobile ? ' 2rem 2rem 3rem': '0 '}
                         text={"Transportieren Sie mühelos schwere Fracht über lange Strecken. Unsere leistungsstarke Lösung bewältigt Lasten von bis zu 40 Tonnen zuverlässig und effizient. Verlassen Sie sich auf uns, um Ihre Fracht sicher ans Ziel zu bringen."}
                     color={"black"}
-            />
+            /></AnimateBox>
 
           </Box>
       </Box>

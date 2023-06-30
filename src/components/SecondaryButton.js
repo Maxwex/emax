@@ -3,13 +3,13 @@ import {Button, useTheme} from '@mui/material';
 
 
 
-const SecondaryButton = ({ children }) => {
+const SecondaryButton = ({ children, ...rest }) => {
     const theme = useTheme();
 
 
     return (
         <Button
-
+            {...rest}
             sx={{
                 textTransform: 'none',
 

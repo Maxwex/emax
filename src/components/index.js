@@ -4,5 +4,6 @@ export { default as Details } from './Details';
 export { default as Range } from './Range';
 export { default as Wheels } from './Wheels';
 export { default as Force } from './Force';
-export { default as Footer } from './Footer';
+export { default as Technical } from './Technical';
 export { default as Navbar } from './Navbar';
+export { default as Preorder } from './Preorder';

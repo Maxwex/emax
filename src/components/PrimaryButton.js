@@ -1,11 +1,12 @@
 import React from 'react';
 import { Button } from '@mui/material';
 
-const PrimaryButton = ({ children, color, bg, bc }) => {
+const PrimaryButton = ({ children, color, bg,hc, bc,mt, ...rest }) => {
 
     return (
-        <Button
+        <Button {...rest}
                 sx={{
+                    marginTop: mt? mt : '0',
                     textTransform: 'none',
 
                     height     : '50px',
@@ -22,7 +23,7 @@ const PrimaryButton = ({ children, color, bg, bc }) => {
                         transition: 'background-color 0.3s ease, color 0.s ease',
 
                         '&:hover': {
-                            backgroundColor: '#dddddd',
+                            backgroundColor:   hc? hc : '#dddddd',
                             border: '2px solid #ddd',
                         },
                     }

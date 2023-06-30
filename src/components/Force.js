@@ -7,6 +7,7 @@ import {Box, Container, useMediaQuery} from "@mui/material";
 import ImageSwitcher from "./ImageSwitcher";
 import TextBox from "./TextBox";
 import {theme} from "../theme";
+import AnimateBox from "./AnimateBox";
 function Force() {
 
     const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
@@ -29,14 +30,19 @@ function Force() {
             <Box sx={{
             width: '100%',
                 maxWidth:'1000px'
+
         }}>
+            <AnimateBox style={{
+                maxWidth: '600px',
+            }}>
             <TextBox
-                       title={"Leichter Einstieg"}
-                          padding={isMobile? '2rem':    '2rem 4rem  '}
+                       title={"Erleichtertet Einstieg"}
+
+                          padding={isMobile? '2rem':    '2rem 0rem  '}
                         text={"Während der Fahrt werden die Einstiegstritte automatisch geschlossen, um den Luftwiderstand zu minimieren. Beim Anhalten werden die Einstiegstritte automatisch ausgefahren, um einen sicheren Ein- und Ausstieg zu gewährleisten.   "}
+        />
 
-
-            />
+            </AnimateBox>
         </Box>
         </Box>
         </Container>

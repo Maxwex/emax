@@ -33,13 +33,12 @@ const Header = () => {
 
   return (
 
-        <Container maxWidth="vw" style={headerStyles}>
+        <Container maxWidth="vw" style={headerStyles} id='home'>
           <Typography variant="h2" component="h1" style={{ fontWeight: 'bold', marginTop: '100px' }}>
             eMax
           </Typography>
             <Typography variant="h6" component="h2" style={{ fontWeight: 'bold', marginTop: '20px' }}>
-                Der erste elektrische LKW
-            </Typography>
+                Elektrisch. Innovativ. Unvergesslich.            </Typography>
           <Stack display="flex"  sx={{
             height: 1,
             width: 1,
@@ -75,13 +74,20 @@ const Header = () => {
           </Box>
           <Grid container gap={"2rem"} justifyContent="center" mb={2} >
 
-          <PrimaryButton
-          >
+          <PrimaryButton bc={"white"}
+              //scroll to  section preorder
+                   href="#preorder"
+
+
+
+              >
+
               Jetzt vorbestellen
             </PrimaryButton>
 
-          <SecondaryButton >
-            Probefahrt vereinbaren
+          <SecondaryButton href="#video"
+          >
+            Video ansehen
           </SecondaryButton>
           </Grid>
         </Stack>

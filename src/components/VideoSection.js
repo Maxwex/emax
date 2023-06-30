@@ -13,10 +13,10 @@ const VideoSection = ({ id }) => {
         width: '100%',
         height: '100%',
         playerVars: {
-            enablejsapi: 1, // Aktiviert die JavaScript-API
-            controls: 1, // Entfernt die Bedienelemente
-            "modestbranding": 1, // Zeigt nur das YouTube-Logo an
-            showinfo: 0, // Entfernt den Titel und den Teilen-Button
+
+            autoplay: 1, // Automatisches abspielen
+            controls: 0, // Entfernt die Bedienelemente
+            showinfo: 1, // Entfernt den Titel und den Teilen-Button
             rel: 0, // Entfernt die Vorschläge am Ende des Videos
         }
     };

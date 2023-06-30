@@ -2,8 +2,11 @@ import React from 'react';
 import Section from "./Section";
 import ImageTableComponent from "./ImageTableComponent";
 import image from "../assets/front.png";
-function Footer() {
-  const data = [
+import {Typography, useMediaQuery} from "@mui/material";
+function Technical() {
+    const isMobile = useMediaQuery('(max-width: 700px)');
+
+    const data = [
       { key: 'Fahrzeuglänge', value: '5.840 mm' },
       { key: 'Breite', value: '2.580 mm' },
       { key: 'Motorleistung', value: '450/350 kW' },
@@ -18,13 +21,15 @@ function Footer() {
       { key: 'Nutzlast ohne Aufbau', value: 'ca. 10,4 t' },
       ];
   return (
-   <Section backgroundColor={'black'}>
+   <Section backgroundColor={'black'} idName={'data'} minHeight={isMobile? 'auto':'100vh'} >
 
-
+       <Typography variant="h4" mt='5rem' style={{ fontWeight: 'bold'}} component={'h2'} color="white" textAlign="center">
+           Technische Daten
+       </Typography>
      <ImageTableComponent image={image} data={data} />
 
     </Section>
   );
 }
 
-export default Footer;
+export default Technical;

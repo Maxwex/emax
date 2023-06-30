@@ -5,7 +5,7 @@ import {Box} from "@mui/material";
 
 function Main() {
   return (
-    <Section backgroundColor={"gray"} padding={' 5rem 0'}>
+    <Section backgroundColor={"#222222"} padding={' 5rem 0'} idName={'video'}>
 
 
       <VideoSection id={"Wx16vMbTXbM"}/>

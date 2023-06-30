@@ -51,13 +51,14 @@ const Navbar = () => {
                 }}>
 
                     <img src={Logo} alt="Logo" style={{marginRight: '10px', height: '36px'}}/>
-                    <Typography variant="h5" component="div" ml={1} sx={{flexGrow: 1}}>
+                    <Typography
+                                 variant="h5" component="div" ml={1} sx={{flexGrow: 1}}>
                         Maxwex
                     </Typography>
-                    <Button color="inherit">Home</Button>
-                    <Button color="inherit">Über uns</Button>
-                    <Button color="inherit">Leistungen</Button>
-                    <Button color="inherit">Kontakt</Button>
+                    <Button href='#home' color="inherit">Home</Button>
+                    <Button color="inherit" href='#video'>Video</Button>
+                    <Button color="inherit" href='#data'>Details</Button>
+                    <Button color="inherit" href='#preorder'>Vorbestellen</Button>
                 </Toolbar>)}
 
             </Toolbar><IconButton color="inherit" edge="end" onClick={toggleSidebar} style={{
@@ -80,16 +81,20 @@ const Navbar = () => {
 
                 }} onClick={toggleSidebar}>
                     <ListItem button>
-                        <ListItemText primary="Home"/>
+                        <ListItemText href='#home' primary="Home"/>
                     </ListItem>
                     <ListItem button>
-                        <ListItemText primary="Über uns"/>
+                        <ListItemText href='#video' primary="Video"/>
                     </ListItem>
                     <ListItem button>
-                        <ListItemText primary="Leistungen"/>
+                        <ListItemText primary="Details"
+                        href='#data'
+                        />
                     </ListItem>
                     <ListItem button>
-                        <ListItemText primary="Kontakt"/>
+                        <ListItemText primary="Vorbestellen"
+                        href='#preorder'
+                        />
                     </ListItem>
                 </List>
             </Drawer>

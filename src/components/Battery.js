@@ -75,8 +75,7 @@ const Battery = () => {
                     </AnimateBox>
                     <Box>
                     <PrimaryButton  color={"black"} bg={"white"} bc={"black"}
-
-                    >
+                                    href="#data"                    >
 
                         Mehr erfahren
                     </PrimaryButton>
